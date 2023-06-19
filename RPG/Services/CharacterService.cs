@@ -53,6 +53,8 @@ namespace RPG.Services.CharacterService
                 if (character is null)
                     throw new Exception($"Character with Id '{updatedCharacter.Id}' not found.");
 
+                _mapper.Map<Character>(updatedCharacter);
+
                 character.Name = updatedCharacter.Name;
                 character.HitPoints = updatedCharacter.HitPoints;
                 character.Strenght = updatedCharacter.Strength;
