@@ -10,7 +10,6 @@ namespace RPG
         {
             CreateMap<Character, GetCharacterDto>();
             CreateMap<AddCharacterDto, Character>();
-            CreateMap<UpdateCharacterDto, Character>();
         }
     }
 
